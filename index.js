@@ -9,7 +9,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const secret = "jsn1K6hflk";
 const nodemailer = require("nodemailer");
-require('dotenv').config();
+
 
 
 app.use(cors({
