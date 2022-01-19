@@ -91,8 +91,7 @@ app.post('/register', async function (req, res) {
         from: "studypurposedemo2021@gmail.com",
         to: req.body.email,
         subject: "Send mail Using Node JS",
-        html : <h1>Click This Link </h1>
-       
+        text : 'Now Login Your Account'
     };
 
 
