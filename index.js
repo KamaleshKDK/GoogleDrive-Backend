@@ -10,7 +10,7 @@ const jwt = require("jsonwebtoken");
 const secret = "jsn1K6hflk";
 const nodemailer = require("nodemailer");
 require('dotenv').config();
-const fs = require("fs");
+
 
 app.use(cors({
     origin: "*"
