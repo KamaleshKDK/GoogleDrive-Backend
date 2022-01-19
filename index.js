@@ -3,7 +3,8 @@ const app = express();
 const cors = require("cors");
 const mongodb = require("mongodb");
 const MongoClient = mongodb.MongoClient;
-const URL = "mongodb://localhost:27017";
+const URL = "mongodb+srv://google:google@cluster0.ualgv.mongodb.net?retryWrites=true&w=majority";
+// const URL = "mongodb://localhost:27017";
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const secret = "jsn1K6hflk";
@@ -90,7 +91,8 @@ app.post('/register', async function (req, res) {
         from: "studypurposedemo2021@gmail.com",
         to: req.body.email,
         subject: "Send mail Using Node JS",
-        text : 'Now Login Your Account'
+        html : <h1>Click This Link </h1>
+       
     };
 
 
